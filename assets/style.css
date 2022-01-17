@@ -1,3 +1,77 @@
-* {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+:root {
+    --white: #f9faf8;
+    --navy: #19344e;
+    --gold: #fac107;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0;
+    padding: 0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    background-color: var(--white);
+  }
+  
+  header,
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    padding: 20px;
+    background-color: var(--navy);
+    color: var(--white);
+  }
+  
+  main {
+    background-image: linear-gradient(
+      rgba(102, 122, 236, 0.3) 0%,
+      rgba(102, 122, 236, 0.6) 100%
+    );
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 80px 0px;
+  }
+  
+  button {
+    background-color: var(--gold);
+    border-radius: 8px;
+    color: var(--navy);
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    transition-duration: 0.15s;
+    transition-property: background-color;
+    transition-timing-function: linear;
+    width: 200px;
+    padding: 10px 20px;
+  }
+  
+  .card {
+    background-color: var(--gold);
+    border: 1px solid var(--navy);
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+    padding: 20px;
+    width: 400px;
+    height: 150px;
+    text-align: center;
+  }
+  
+  #total-wins {
+    color: #001b44;
+  }
+  
+  #total-losses {
+    color: #e6252c;
+  }
+  

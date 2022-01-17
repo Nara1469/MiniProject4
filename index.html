@@ -8,7 +8,29 @@
     <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Word Guess Game</h1> 
+        <button id="start">Start</button>
+    </header>
+
+    <main>
+        <div class ="card">
+            <h2 id="word"></h2>
+        </div>
+
+        <div class="card">
+            <h3 id="timer">100</h3>
+            <p>seconds remaining</p>
+        </div>
+    </main>
+
+    <footer>
+        <h4>Your Results</h4>
+        <p><strong>Total Wins: </strong> <span id="total-wins"></span></p>
+        <p><strong>Total Losses: </strong> <span id="total-losses"></span></p>
+        <button id="reset">Reset Score</button>
+    </footer>
+
     <script src="./assets/script.js"></script>
 </body>
 </html>
